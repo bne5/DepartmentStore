@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root "departments#index"  
+  # sets index from departments_controller as the root route
+
+  resources :departments
+  # creates seven different routes in your application, all mapping to the departments_controller:
 end
